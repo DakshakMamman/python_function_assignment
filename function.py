@@ -56,9 +56,9 @@ print(count_even([2, 4, 6, 8]))
 def triangle_area(base, height):
     area = 0.5 * base * height
     return area
-print(triangle_area(10, 5))   # Output: 25.0
-print(triangle_area(6, 3))    # Output: 9.0
-print(triangle_area(0, 10))   # Output: 0.0
+print(triangle_area(10, 5))  
+print(triangle_area(6, 3))    
+print(triangle_area(0, 10))  
 
 
 
@@ -68,16 +68,4 @@ def check_password_strength(password):
     elif 6 <= len(password) <= 10:
         return "Medium"
     else:
-        has_letter = any(char.isalpha() for char in password)
-        has_digit = any(char.isdigit() for char in password)
-
-        if has_letter and has_digit:
-            return "Strong"
-        else:
-            return "Medium"
-print(check_password_strength("123"))           # Weak
-print(check_password_strength("abcdef"))        # Medium
-print(check_password_strength("abcd1234"))      # Medium
-print(check_password_strength("abcd1234567"))   # Strong
-print(check_password_strength("abcdefghijk"))   # Medium
-
+       
